@@ -1,3 +1,13 @@
+:root {
+  --color-black: #000000;
+  --color-primary: #34547a;
+  --color-secondary: #727272;
+  --color-light: #ffffff;
+  --bg-color-lite: #eeeff1;
+
+  --container-small-size: 540px;
+}
+
 *,
 *::after,
 *::before {
@@ -17,7 +27,7 @@ a {
 }
 
 .header {
-  background-color: #eeeff1;
+  background-color: var(--bg-color-lite);
   min-height: 700px;
   padding-top: 80px;
 }
@@ -39,20 +49,18 @@ a {
   column-gap: 42px;
 }
 
-.header-navbar__item {}
-
 .header-navbar__link {
   letter-spacing: 0.1em;
-  color: #000000;
+  color: var(--color-black);
 }
 
 .header-navbar__link.active {
   font-weight: 500;
-  color: #34547a;
+  color: var(--color-primary);
 }
 
 .header-content {
-  max-width: 540px;
+  max-width: var(--container-small-size);
 }
 
 .header-content__title {
@@ -61,37 +69,28 @@ a {
   font-size: 48px;
   font-weight: 500;
   line-height: 79px;
-  color: #000000;
+  color: var(--color-black);
 }
 
 .header-content__description {
   margin-bottom: 60px;
   line-height: 26px;
-  color: #727272;
+  color: var(--color-secondary);
 }
-
-.header-content__actions {}
 
 .header-content__link {
   width: 225px;
-  height: 65px;
-
+  min-height: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1em;
-  background-color: #34547a;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  background-color: var(--color-primary);
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: var(--color-light);
 }
-
-.main {}
 
 .about {
   padding: 112px 0 92px;
@@ -114,15 +113,15 @@ a {
 .about__description {
   line-height: 26px;
   text-align: center;
-  color: #727272;
+  color: var(--color-secondary);
 }
 
 .experience {
   min-height: 250px;
-  background: #34547a;
+  background: var(--color-primary);
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: var(--color-light);
 }
 
 .container--experience {
@@ -137,8 +136,6 @@ a {
   gap: 20px;
 }
 
-.experience-item__image {}
-
 .experience-item__title {
   font-weight: 500;
   font-size: 21px;
@@ -152,10 +149,11 @@ a {
 
 .process {
   padding: 100px 0 100px;
+  background-color: var(--bg-color-lite);
 }
 
 .process__container {
-  max-width: 540px;
+  max-width: var(--container-small-size);
   margin: 0 auto;
 }
 
@@ -170,7 +168,7 @@ a {
 .process__description {
   line-height: 26px;
   text-align: center;
-  color: #727272;
+  color: var(--color-secondary);
   margin-bottom: 50px;
 }
 
@@ -182,8 +180,8 @@ a {
 
 .footer {
   min-height: 150px;
-  background-color: #34547a;
-  color: #ffffff;
+  background-color: var(--color-primary);
+  color: var(--color-light);
   padding: 50px 0 45px;
 }
 
